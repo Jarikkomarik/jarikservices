@@ -1,0 +1,7 @@
+d88888b d8888b.  .d8b.  db    db d8888b.
+88'     88  `8D d8' `8b 88    88 88  `8D
+88ooo   88oobY' 88ooo88 88    88 88   88
+88~~~   88`8b   88~~~88 88    88 88   88
+88      88 `88. 88   88 88b  d88 88  .8D
+YP      88   YD YP   YP ~Y8888P' Y8888D'
+Powered by Spring Boot ${spring-boot.version}

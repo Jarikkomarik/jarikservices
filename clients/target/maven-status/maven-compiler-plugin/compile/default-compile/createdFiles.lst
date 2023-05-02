@@ -1,0 +1,4 @@
+com/jarikkomarik/clients/fraud/clients/FraudClient.class
+com/jarikkomarik/clients/fraud/clients/NotificationClient.class
+com/jarikkomarik/clients/fraud/dto/NotificationDto.class
+com/jarikkomarik/clients/fraud/dto/FraudCheckResponse.class
