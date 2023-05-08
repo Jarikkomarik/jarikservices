@@ -21,6 +21,7 @@ eureka:
     client:
         service-url:
             defaultZone: http://eureka-server:8761/eureka/
+        enabled: false
 rabbitmq:
   addresses: rabbitmq:5672
   exchanges:
