@@ -11,13 +11,12 @@
 
   <modules>
     <module>customer</module>
-      <module>fraud</module>
+    <module>fraud</module>
     <module>clients</module>
     <module>Notification</module>
   </modules>
 
   <name>jarikservices</name>
-  <!-- FIXME change it to the project's website -->
   <url>https://www.jarikkomarik.com</url>
 
   <properties>
