@@ -7,13 +7,19 @@ import com.jarikkomarik.clients.fraud.clients.FraudClient;
 
 import com.jarikkomarik.clients.fraud.dto.NotificationDto;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
 @Service
 @Slf4j
-public record CustomerService(CustomerRepository customerRepository, FraudClient fraudClient, NotificationClient notificationClient, RabbitMqMessageProducer messageProducer) {
+public record CustomerService(
+        CustomerRepository customerRepository,
+        FraudClient fraudClient,
+        NotificationClient notificationClient,
+        KafkaTemplate<String, NotificationDto> kafkaTemplate
+) {
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -21,8 +27,7 @@ public record CustomerService(CustomerRepository customerRepository, FraudClient
                 .lastName(request.lastName())
                 .email(request.email())
                 .build();
-        //TODO: check if email valid
-        //TODO: check if email is not taken
+
         customerRepository.saveAndFlush(customer);
         FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
 
@@ -30,13 +35,13 @@ public record CustomerService(CustomerRepository customerRepository, FraudClient
             throw new IllegalStateException("customer is fraudster");
         }
 
-        messageProducer.publish(new NotificationDto(
+        kafkaTemplate.send("jarikservices", new NotificationDto(
                 customer.getId(),
                 LocalDateTime.now(),
                 "Registered new Customer",
                 "Customer Service",
                 customer.getEmail()
-        ), "internal.exchange", "internal.notification.routing-key");
+        ));
 
     }
 }

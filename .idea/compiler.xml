@@ -8,13 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="notification" />
-        <module name="apigw" />
         <module name="clients" />
         <module name="fraud" />
-        <module name="amqp" />
-        <module name="eureka-server" />
         <module name="customer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="amqp" target="17" />
+      <module name="apigw" target="17" />
+      <module name="eureka-server" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

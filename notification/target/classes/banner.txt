@@ -1,3 +1,0 @@
-notification_app_siska3
-Powered by Spring Boot ${spring-boot.version}
-

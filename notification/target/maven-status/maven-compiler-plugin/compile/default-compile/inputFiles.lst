@@ -5,3 +5,4 @@
 /Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationConsumer.java
 /Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/Notification.java
 /Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationRepository.java
+/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/KafkaConsumerConfig.java

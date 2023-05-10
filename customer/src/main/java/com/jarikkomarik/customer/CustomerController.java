@@ -12,9 +12,4 @@ public record CustomerController(CustomerService customerService) {
         log.info("New customer registration {}", customerRegistrationRequest);
         customerService.registerCustomer(customerRegistrationRequest);
     }
-
-    @GetMapping
-    public String test() {
-        return "yolo123";
-    }
 }
