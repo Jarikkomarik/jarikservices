@@ -1,9 +1,0 @@
-com/jarikkomarik/customer/CustomerRepository.class
-com/jarikkomarik/customer/CustomerController.class
-com/jarikkomarik/customer/CustomerService.class
-com/jarikkomarik/customer/Customer.class
-com/jarikkomarik/customer/CustomerRegistrationRequest.class
-com/jarikkomarik/customer/KafkaTopicConfig.class
-com/jarikkomarik/customer/Customer$CustomerBuilder.class
-com/jarikkomarik/customer/CustomerApplication.class
-com/jarikkomarik/customer/KafkaProducerConfig.class
