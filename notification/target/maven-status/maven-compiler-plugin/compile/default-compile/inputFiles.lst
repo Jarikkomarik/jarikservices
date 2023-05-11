@@ -1,8 +1,0 @@
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationApplication.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationService.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationConfig.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationController.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationConsumer.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/Notification.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/NotificationRepository.java
-/Users/yoelufland/IdeaProjects/jarikservices/Notification/src/main/java/com/jarikkomarik/notification/KafkaConsumerConfig.java

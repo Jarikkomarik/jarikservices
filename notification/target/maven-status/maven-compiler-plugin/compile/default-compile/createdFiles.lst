@@ -1,9 +1,0 @@
-com/jarikkomarik/notification/KafkaConsumerConfig.class
-com/jarikkomarik/notification/NotificationConfig.class
-com/jarikkomarik/notification/NotificationController.class
-com/jarikkomarik/notification/NotificationConsumer.class
-com/jarikkomarik/notification/NotificationService.class
-com/jarikkomarik/notification/Notification$NotificationBuilder.class
-com/jarikkomarik/notification/NotificationRepository.class
-com/jarikkomarik/notification/Notification.class
-com/jarikkomarik/notification/NotificationApplication.class
